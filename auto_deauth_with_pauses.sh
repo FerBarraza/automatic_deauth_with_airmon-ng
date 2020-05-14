@@ -2,7 +2,7 @@
 arreglo_de_canales=(
     1
     6
-    11
+    9
 )
 
 echo "	Ingrese bssid"
@@ -34,8 +34,8 @@ do
 			if [ $? -ne 0 ]; then 
 			pkill airodump-ng
 			break
-			else 
-			echo "Sí está en canal";
+			else
+			echo "Sigue en este canal";
 			sleep 20
 
 			fi

